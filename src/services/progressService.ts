@@ -159,3 +159,4 @@ export async function deleteCourseProgress(
     (p) => !(p.id === progressId && p.userId === userId),
   );
 }
+// kjb
