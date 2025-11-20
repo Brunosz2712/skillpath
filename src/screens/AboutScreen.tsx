@@ -24,8 +24,8 @@ const AboutScreen: React.FC = () => {
           <Text style={styles.heroBadge}>SOBRE O APP</Text>
           <Text style={styles.heroTitle}>SkillPath</Text>
           <Text style={styles.heroSubtitle}>
-            Um app para organizar sua transição de carreira com trilhas guiadas
-            em diferentes áreas.
+            Organize sua transição de carreira com trilhas claras e foco no que
+            realmente importa.
           </Text>
         </View>
       </ImageBackground>
@@ -34,32 +34,32 @@ const AboutScreen: React.FC = () => {
       <ScrollView contentContainerStyle={styles.content}>
         <Text style={styles.sectionTitle}>O que é o SkillPath?</Text>
         <Text style={styles.sectionText}>
-          O SkillPath foi criado para apoiar pessoas que querem mudar de área,
-          mas não sabem por onde começar. O app organiza trilhas de estudo
-          iniciais em Tecnologia, Contabilidade, Administração e Economia,
-          acompanhando o percentual de conclusão de cada curso.
+          O SkillPath foi pensado para quem quer mudar de área, mas está
+          perdido sobre por onde começar. O app sugere trilhas iniciais em
+          Tecnologia, Contabilidade, Administração e Economia, com progresso em
+          porcentagem para cada curso.
         </Text>
 
         <Text style={styles.sectionText}>
-          A proposta é dar clareza de caminho: você escolhe a área de destino,
-          acompanha seu progresso e visualiza exemplos de empresas onde esse
-          conhecimento pode ser aplicado.
+          A ideia é tirar o “ruído” do caminho: você escolhe a área de destino,
+          acompanha a evolução e enxerga exemplos de empresas onde esse perfil
+          pode fazer sentido.
         </Text>
 
         <View style={styles.card}>
           <Text style={styles.cardTitle}>Versão publicada</Text>
           <Text style={styles.cardText}>
-            A versão em execução deve corresponder ao commit abaixo, usado como
-            referência na publicação via Firebase App Distribution.
+            Esta versão do aplicativo está ligada ao commit abaixo, usado como
+            referência para a publicação via Firebase App Distribution.
           </Text>
 
           <Text style={styles.label}>Commit de referência</Text>
           <Text style={styles.commit}>{COMMIT_HASH}</Text>
 
           <Text style={styles.warning}>
-            Caso seja gerada uma nova versão do aplicativo, lembre-se de atualizar
-            este hash para manter a rastreabilidade entre o código-fonte enviado
-            e o binário publicado.
+            Sempre que uma nova versão for gerada, lembre-se de atualizar este
+            hash. Isso garante a rastreabilidade entre o código enviado e o
+            binário publicado.
           </Text>
         </View>
       </ScrollView>
@@ -88,20 +88,20 @@ const styles = StyleSheet.create({
     paddingBottom: 18,
   },
   heroBadge: {
-    fontSize: 11,
+    fontSize: 12,
     color: '#22c55e',
     fontWeight: '600',
     letterSpacing: 1,
     marginBottom: 4,
   },
   heroTitle: {
-    fontSize: 22,
+    fontSize: 26, // ↑ um pouco
     fontWeight: '800',
     color: '#f9fafb',
-    marginBottom: 4,
+    marginBottom: 6,
   },
   heroSubtitle: {
-    fontSize: 13,
+    fontSize: 14, // ↑ um pouco
     color: '#cbd5f5',
   },
   content: {
@@ -110,15 +110,15 @@ const styles = StyleSheet.create({
     paddingBottom: 32,
   },
   sectionTitle: {
-    fontSize: 14,
+    fontSize: 16, // ↑ um pouco
     fontWeight: '600',
     color: '#e5e7eb',
-    marginBottom: 6,
+    marginBottom: 8,
   },
   sectionText: {
-    fontSize: 12,
+    fontSize: 13, // ↑ um pouco
     color: '#9ca3af',
-    marginBottom: 10,
+    marginBottom: 12,
   },
   card: {
     backgroundColor: '#0b1120',
@@ -129,13 +129,13 @@ const styles = StyleSheet.create({
     marginTop: 12,
   },
   cardTitle: {
-    fontSize: 14,
+    fontSize: 15,
     fontWeight: '600',
     color: '#e5e7eb',
-    marginBottom: 4,
+    marginBottom: 6,
   },
   cardText: {
-    fontSize: 12,
+    fontSize: 13, // ↑ um pouco
     color: '#9ca3af',
     marginBottom: 12,
   },
@@ -143,7 +143,7 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontWeight: '600',
     color: '#e5e7eb',
-    marginBottom: 2,
+    marginBottom: 4,
   },
   commit: {
     fontSize: 13,
@@ -152,7 +152,7 @@ const styles = StyleSheet.create({
     marginBottom: 12,
   },
   warning: {
-    fontSize: 11,
+    fontSize: 12, // ↑ um pouco
     color: '#9ca3af',
   },
 });
