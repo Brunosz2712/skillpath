@@ -7,9 +7,9 @@ O app organiza trilhas iniciais de estudo em diferentes áreas e acompanha o pro
 
 ## 👥 Integrantes do grupo
 
-- **Bruno da Silva Souza** — RM: **94346**
-- **Julio Samuel de Oliveira** — RM: **557453**
-- **Leonardo da Silva Pereira** — RM: **557598**
+- **Bruno da Silva Souza 2TDSPW** — RM: **94346**
+- **Julio Samuel de Oliveira 2TDSPG** — RM: **557453**
+- **Leonardo da Silva Pereira 2TDSPG** — RM: **557598**
 
 ---
 
