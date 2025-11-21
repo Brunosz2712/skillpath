@@ -15,10 +15,8 @@ O app organiza trilhas iniciais de estudo em diferentes áreas e acompanha o pro
 
 ## 📌 Repositório (GitHub Classroom)
 
-> **Link do repositório no GitHub Classroom:**  
-> `https://github-classroom.com/SEU_LINK_AQUI`  
-
-_(substituir pelo link oficial do Classroom da disciplina)_
+> **Link do repositório no GitHub:**  
+> `[https://github-classroom.com/SEU_LINK_AQUI](https://github.com/Brunosz2712/skillpath.git)`  
 
 ---
 
