@@ -1,9 +1,13 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { login as loginRequest, signup as signupRequest, User } from '../services/authService';
+import {
+  login as loginRequest,
+  signup as signupRequest,
+  AuthUser,
+} from '../services/authService';
 
 type AuthContextData = {
-  user: User | null;
+  user: AuthUser | null;
   token: string | null;
   loading: boolean;
   login: (email: string, password: string) => Promise<void>;
@@ -14,7 +18,7 @@ type AuthContextData = {
 const AuthContext = createContext<AuthContextData | undefined>(undefined);
 
 export const AuthProvider: React.FC<React.PropsWithChildren> = ({ children }) => {
-  const [user, setUser] = useState<User | null>(null);
+  const [user, setUser] = useState<AuthUser | null>(null);
   const [token, setToken] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -39,6 +43,7 @@ export const AuthProvider: React.FC<React.PropsWithChildren> = ({ children }) =>
 
   async function login(email: string, password: string) {
     const data = await loginRequest(email, password);
+
     setToken(data.token);
     setUser(data.user);
 
@@ -50,7 +55,6 @@ export const AuthProvider: React.FC<React.PropsWithChildren> = ({ children }) =>
 
   async function signup(values: { name: string; email: string; password: string }) {
     await signupRequest(values);
-    // se API devolver token, você pode logar direto aqui
   }
 
   async function logout() {
